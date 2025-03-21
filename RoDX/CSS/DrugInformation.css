@@ -1,0 +1,153 @@
+body {
+    font-family: Inter Tight;
+    background-color: #f0f0f0;
+    margin: 20px;
+    padding: 20px;
+}
+
+.drug-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    gap:20px;
+}
+
+.drug{
+    width: calc(33.33% - 20px);
+    background-color: rgba(20, 116, 135, 0.4);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+}
+
+.drug h2 {
+    margin-top: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.drug-info {
+    line-height: 1.6;
+    display: none;
+    transition: max-height 0.3s ease-out; 
+    overflow: hidden;
+}
+
+.drug.expanded .drug-info {
+    display: block; 
+    max-height: 300px; 
+}
+
+.go-back {
+    position: absolute;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.button-drugsinfo{
+    position:absolute;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.go-back {
+    top: 20px;
+    left: 20px;
+}
+
+.button-drugsinfo {
+    top: 20px;
+    right: 20px;
+}
+
+.go-back:hover, .button-drugsinfo:hover {
+    background-color: #e0e0e0;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 80px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.open-popup {
+    align-self: flex-end;
+    background-color:rgba(20, 116, 135, 0.8) ;
+    color: white;
+    border:none;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: auto;
+    transition: 0.3s;
+    font-size: 15px;
+    cursor:pointer;
+}
+
+.open-popup:hover {
+    background-color: var(--dl-color-custom-primary2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+    background: none;
+    border: none;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+.popup-text {
+    text-align: left;
+}

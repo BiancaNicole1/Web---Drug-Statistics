@@ -1,0 +1,140 @@
+:root {
+    --dl-color-custom-accent1: #C9E8FF;
+    --dl-color-custom-primary1: #147487;
+    --dl-color-custom-primary2: #0A3A44;
+    --dl-color-custom-secondary1: #A9D5DD;
+    --dl-color-custom-neutral-dark: #222222;
+    --dl-color-custom-neutral-light: #F5F4F4;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #A9D5DD;
+    font-family: Inter Tight;
+}
+
+.container-top-menu {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    margin-bottom: 20px;
+}
+
+.container-top-menu h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--dl-color-custom-primary2);
+    margin: 0;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--dl-color-custom-neutral-dark);
+    padding: 8px;
+}
+
+th {
+    background-color: var(--dl-color-custom-accent1);
+    text-align: left;
+}
+
+td {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: var(--dl-color-custom-neutral-light);
+}
+
+form {
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+}
+
+label, input[type="file"], input[type="submit"] {
+    display: block;
+    margin: 10px 0;
+    flex: center;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dl-color-custom-neutral-dark);
+}
+
+input[type="submit"] {
+    background-color: var(--dl-color-custom-primary1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: center;
+    padding-left: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dl-color-custom-primary2);
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #DFF2BF;
+    border: 1px solid #4F8A10;
+    color: #4F8A10;
+}
+
+.message.error {
+    background-color: #FEEFB3;
+    border: 1px solid #9F6000;
+    color: #9F6000;
+}
+
+.go-back {
+    position: absolute;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.go-back {
+    top: 20px;
+    left: 20px;
+}

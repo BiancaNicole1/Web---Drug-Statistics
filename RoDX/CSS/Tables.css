@@ -1,0 +1,180 @@
+.charts-container {
+    display: flex; 
+    padding: 20px; 
+    white-space: nowrap; 
+    height:80vh; 
+    gap:250px;
+    width: 100%; 
+}
+
+.chart-item {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    min-width: 400px; 
+    height: 400px; 
+}
+
+.chart-title{
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 30px; 
+}
+
+canvas {
+    width: 100%; 
+    height: 100%; 
+}
+
+.second-row-container {
+    display: flex; 
+    padding: 20px; 
+    height:80vh; 
+    gap:250px;
+    width: 100%; 
+}
+
+.chart-item-second {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    min-width: 400px; 
+    height: 400px; 
+}
+
+.chart-item-second .chart-title{
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 30px; 
+}
+
+.chart-item-second .canvas {
+    width: 100%; 
+    height: 100%; 
+}
+
+
+.third-row-container {
+    display: flex; 
+    padding: 20px; 
+    height:80vh; 
+    gap:250px;
+    width: 100%; 
+}
+
+.chart-item-third {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    min-width: 400px; 
+    height: 400px; 
+}
+
+.chart-item-third .chart-title{
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 30px; 
+}
+
+.chart-item-third .canvas {
+    width: 100%; 
+    height: 100%; 
+}
+
+.fourth-row-container {
+    display: flex; 
+    padding: 20px; 
+    height:80vh; 
+    gap:250px;
+    width: 100%; 
+}
+
+.chart-item-fourth {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    min-width: 400px; 
+    height: 400px; 
+}
+
+.chart-item-fourth .chart-title{
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 30px; 
+}
+
+.chart-item-fourth .canvas {
+    width: 100%; 
+    height: 100%; 
+}
+
+
+.fifth-row-container {
+    display: flex; 
+    padding: 20px; 
+    height:80vh; 
+    gap:250px;
+    width: 100%; 
+}
+
+.chart-item-fifth{
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    min-width: 400px; 
+    height: 400px; 
+}
+
+.chart-item-fifth .chart-title{
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 30px; 
+}
+
+.chart-item-fifth .canvas {
+    width: 100%; 
+    height: 100%; 
+}
+
+.sixth-row-container {
+    display: flex; 
+    padding: 20px; 
+    height:80vh; 
+    gap:250px;
+    width: 100%; 
+}
+
+.chart-item-sixth{
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+    min-width: 400px; 
+    height: 400px; 
+}
+
+.chart-item-sixth .chart-title{
+    text-align: center; 
+    margin-bottom: 30px; 
+    font-size: 30px; 
+}
+
+.chart-item-sixth .canvas {
+    width: 100%; 
+    height: 100%; 
+}
+
+.go-back {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);;
+}
+
+.go-back:hover {
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,268 @@
+:root {
+    --dl-color-custom-accent1: #C9E8FF;
+    --dl-color-custom-primary1: #147487;
+    --dl-color-custom-primary2: #0A3A44;
+    --dl-color-custom-secondary1: #A9D5DD;
+    --dl-color-custom-neutral-dark: #222222;
+    --dl-color-custom-neutral-light: #F5F4F4;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #A9D5DD;
+}
+
+.container-top-menu {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between; /* Aliniere elemente în stânga și dreapta */
+    align-items: center; /* Aliniere verticală la centru */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Adăugat pentru a face containerul un flex container vertical */
+    position: relative;
+}
+.continut{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+.container-top-menu h1 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter Tight;
+    text-transform: uppercase;
+    color: #0a3a44;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-select1 {
+    width: var(--dl-size-size-large);
+    height: auto;
+    max-width: var(--dl-size-size-medium);
+    min-width: var(--dl-size-size-medium);
+    align-self: center;
+    margin: 10px 0; /* Adăugat pentru a oferi spațiu între elemente */
+}
+
+.home-btn-group {
+    gap:32px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 10px; /* Add space above the button group */
+}
+
+.buttonFilled {
+    color: var(--dl-color-custom-neutral-light);
+    transition: 0.3s;
+    font-family: Inter Tight;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-left: 24px;
+    border-radius: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    background-color: var(--dl-color-custom-primary1);
+    margin: 10px 0; /* Adăugat pentru a oferi spațiu între elemente */
+}
+
+.buttonFilled:hover {
+    background-color: var(--dl-color-custom-primary2);
+}
+
+.buttonFlat {
+    color: var(--dl-color-custom-neutral-dark);
+    font-family: Inter Tight;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    width: 210px; /* Ensure enough width to keep the text on a single line */
+    text-align: center; /* Center align the text */
+    white-space: nowrap; /* Prevent the text from wrapping */
+    margin-top:10px;
+    
+}
+
+.buttonFlat:hover {
+    color: var(--dl-color-custom-primary1);
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px; /* Limit the maximum width */
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-button {
+    color: var(--dl-color-custom-neutral-light);
+    transition: 0.3s;
+    font-family: Inter Tight;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-left: 24px;
+    border-radius: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    margin:10px;
+    background-color: var(--dl-color-custom-primary1);
+}
+
+.popup-button:hover {
+    background-color: var(--dl-color-custom-primary2);
+}
+
+.go-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);;
+}
+
+.go-back:hover {
+    background-color: #e0e0e0;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-group .row .dropdown {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.button-group .row .buttonFlat {
+    flex-grow: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d1ecf1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Inter Tight;
+    text-align: center;
+    border-radius: 8px; 
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px; 
+    
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    background-color: #aaebf7;
+    widows:var(--dl-color-custom-neutral-dark);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buttonFilled, .buttonFlat {
+    margin-bottom:0px;
+}

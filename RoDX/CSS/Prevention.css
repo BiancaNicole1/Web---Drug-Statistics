@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+.container-top-menu {
+    background-color: white;
+    border-bottom: 2px solid #92c5cf; 
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.container-top-menu h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Inter Tight;
+    text-transform: uppercase;
+
+    color: #0a3a44;
+}
+
+.container-top-menu h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.loginedit {
+    margin-left: auto;
+}
+
+.loginedit a {
+    color: #0a3a44;
+    font-weight: bold;
+}
+
+.loginedit a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 30px;
+    margin-top:40px;
+}
+
+.drug-info {
+    display: none;
+    background-color: #92c5cf;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.drug-info {
+    display: none;
+    background-color: #92c5cf;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+.drug-info h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #0A3A44;
+}
+
+.drug-info p {
+    line-height: 1.6;
+    color: #0A3A44;
+}
+
+.drug-info ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.drug-info li {
+    margin-bottom: 5px;
+}
+
+.loginedit {
+    font-weight: bold;
+    }
+
+    
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0a3a44;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.faq-container {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.faq-question span {
+    font-weight: bold;
+    color: #0A3A44;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    padding: 10px;
+    display: none; 
+}
+
+.faq-answer p {
+    margin-top: 0;
+    color: #147487;
+}
+
+.faq-answer ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.faq-answer li {
+    color: #147487;
+}
+
+.go-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);;
+}
+
+.go-back:hover {
+    background-color: #e0e0e0;
+}
+
+.button-drugsinfo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px 15px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Inter Tight;
+    color: #333;
+    transition: background-color 0.3s;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);;
+}
+
+.button-drugsinfo:hover {
+    background-color: #e0e0e0;
+}
